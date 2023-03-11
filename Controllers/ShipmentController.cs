@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Shipment_Project.Model;
 using Shipment_Project.Service.ShipmentService;
 using Shipment_Project.Shared.Response;
 using System.Collections.Generic;
@@ -29,9 +30,9 @@ namespace Shipment_Project.Controllers
 
 
         [HttpGet("ShipperShipmentDetails")]
-        public List<ShipperDetails> ShipperShipmentDetails(int shipperId)
+        public List<Shipper_Shipments_Detail> ShipperShipmentDetails(int shipperId)
         {
-            var response = _shipmentManager.GetShipperDetails();
+            var response = _shipmentManager.ShipperShipmentDetails(shipperId);
             return response;
         }
 

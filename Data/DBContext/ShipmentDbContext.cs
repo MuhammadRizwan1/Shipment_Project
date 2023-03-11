@@ -15,6 +15,7 @@ namespace Shipment_Project.Data.DBContext
         public DbSet<Shipment> Shipment { get; set; }
         public DbSet<Shipment_Rate> Shipment_Rate { get; set; }
         public DbSet<Shipper> Shipper { get; set; }
+        public DbSet<Shipper_Shipments_Detail> Shipper_Shipments_Detail { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -27,9 +27,6 @@ namespace Shipment_Project.Service.QuoteService
             try
             {
                 var url = "https://api.quotable.io/random";
-                //var queryParameters = "?userId=1&postId=2";
-                //var url = baseUrl + queryParameters;
-
                 var response = await _httpClient.GetAsync(url);
 
                 if (response.IsSuccessStatusCode)

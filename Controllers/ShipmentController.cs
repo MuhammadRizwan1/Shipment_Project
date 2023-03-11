@@ -36,13 +36,5 @@ namespace Shipment_Project.Controllers
             return response;
         }
 
-
-
-
-
-
-
-
-
     }
 }
